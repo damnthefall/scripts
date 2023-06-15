@@ -1,0 +1,1 @@
+SKIP_MRPROPER=1 BUILD_CONFIG=kernel-4.19/build.config.mtk.aarch64 LTO=thin build/build.sh
