@@ -1,0 +1,18 @@
+ARCH=arm64
+CROSS_COMPILE=aarch64-linux-gnu-
+LLVM=1
+LLVM_IAS=1
+LD_LIBRARY_PATH=prebuilts-master/clang/host/linux-x86/clang-r383902/lib64:$$LD_LIBRARY_PATH
+DEFCONFIG=boratmo_debug_defconfig
+KERNEL_DIR=kernel-4.19
+CLANG_PREBUILT_BIN=prebuilts-master/clang/host/linux-x86/clang-r383902/bin
+# for check scripts
+CC=clang
+LD=ld.lld
+AR=llvm-ar
+NM=llvm-nm
+OBJCOPY=llvm-objcopy
+OBJDUMP=llvm-objdump
+READELF=llvm-readelf
+OBJSIZE=llvm-size
+STRIP=llvm-strip
